@@ -1,1 +1,96 @@
-/* developer styles go here */
+:root {
+    --cream: #e5e1db;
+    --yellow: #cfb450;
+    --grey: #6b6271;
+    --lt-grey: #d2cfd1;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner-container {
+    padding: 0 1rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* + + + header + + + */
+header {
+    background-color: var(--cream);
+    padding-bottom: 0.5rem;
+}
+
+nav {
+    display: none;
+}
+
+header form {
+    flex: 1 0 100%;
+}
+
+header input {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-image: url(../img/magnifying-glass.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center left 5px;
+    padding: 0.5rem 0.5rem 0.5rem 40px;
+}
+
+/* + + + form + + + */
+section form {
+    border: 1px solid var(--lt-grey);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px var(--lt-grey);
+    padding: 1.5rem;
+}
+
+section form div {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid var(--lt-grey);
+}
+
+/* input[type="email"]:invalid,
+input[type="password"]:invalid {
+    outline: 1px solid tomato;
+} 
+
+input[type="email"]:valid,
+input[type="password"]:valid {
+    outline: 1px solid green;
+*/
+
+input[type="submit"] {
+    background-color: var(--yellow);
+    color: var(--cream);
+    text-transform: uppercase;
+    border: 1px solid var(--yellow);
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    color:#000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
